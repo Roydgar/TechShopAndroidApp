@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.product_info.ProductInfoFragment"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/productItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="25sp"
+        android:text="Name"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/productItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/productItemName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:text="Price"/>
+
+    <TextView
+        android:id="@+id/productItemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/productItemPrice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:text="Description"/>
+
+    <TextView
+        android:id="@+id/productItemCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/productItemDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:text="Category"/>
+
+    <TextView
+        android:id="@+id/productItemAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/productItemCategory"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:text="Availability"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
